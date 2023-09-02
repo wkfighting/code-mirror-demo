@@ -1,4 +1,13 @@
 .container {
     border: 6px solid darkblue;
-    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+input {
+    width: 50px;
 }

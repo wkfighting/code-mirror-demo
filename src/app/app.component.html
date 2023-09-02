@@ -1,4 +1,28 @@
 <div class="container">
   <textarea class="textarea"></textarea>
 </div>
-<button (click)="format()">格式化</button>
+<div class="btn-container">
+  <div>
+    <button (click)="format()">格式化</button>
+    <button style="margin-left: 20px" (click)="validate()">语法校验</button>
+  </div>
+  <span>行：{{ row }}， 列：{{ col }}</span>
+</div>
+<div>
+  <h4>from</h4>
+  <div>
+    <span>line: </span>
+    <input type="number" [(ngModel)]="from.line" />
+    <span style="margin-left: 20px">ch: </span>
+    <input type="number" [(ngModel)]="from.ch" />
+  </div>
+</div>
+<div>
+  <h4>to</h4>
+  <div>
+    <span>line: </span>
+    <input type="number" [(ngModel)]="to.line" />
+    <span style="margin-left: 20px">ch: </span>
+    <input type="number" [(ngModel)]="to.ch" />
+  </div>
+</div>
